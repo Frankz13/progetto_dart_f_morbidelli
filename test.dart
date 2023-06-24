@@ -184,7 +184,7 @@ areaRettangolo(){
       print("Base");
       base = int.tryParse(stdin.readLineSync()!);
       if (base == null || base <= 0){
-        print("Perfavore inserisci un numero positivo");
+        print("Per favore inserisci un numero positivo");
       }
     }while (base == null || base <= 0);
     
@@ -194,7 +194,7 @@ areaRettangolo(){
       print("Altezza");
       altezza = int.tryParse(stdin.readLineSync()!);
       if(altezza == null || altezza <= 0){
-        print("Perfavore inserisci un numero positivo");
+        print("Per favore inserisci un numero positivo");
       }
     }while (altezza == null || altezza <= 0);
 
@@ -221,13 +221,13 @@ sommaProdotto(a: Int, b: Int) {
 sommaProdotto(){
   print("Richiesta 4");
 
-  print("Inserisci 2 valori 'a' e 'b' \nOtterrai la somma e se i valori sono uguali otterai il triplo della loro somma.");
+  print("Inserisci 2 valori 'a' e 'b' \nOtterrai la somma, oppure se i valori sono uguali otterai il triplo della loro somma.");
   int? a , b;
   do {
     print("a:");
     a = int.tryParse(stdin.readLineSync()!);
     if (a == null){
-      print("Perfavore inserisci un numero");
+      print("Per favore inserisci un numero");
     }
   }while(a == null);
   
@@ -235,7 +235,7 @@ sommaProdotto(){
     print("b:");
     b = int.tryParse(stdin.readLineSync()!);
     if (b == null){
-      print("Perfavore inserisci un numero");
+      print("Per favore inserisci un numero");
     }
   }while(b == null);
   int r ;
@@ -267,7 +267,7 @@ Se il voto complessivo tra teoria e pratica fa 31 o 32, il risultato sarà 30 e 
 ///il tuo codice qui */
 risultatiEsami(){
   print("Richiesta 5");
-  print("Inserisci i voti della prova scritta (tra -8 e +8) e praticata (tra 0 e 24) dello studente e scropri la valutazione finale ");
+  print("Inserisci i voti della prova scritta (tra -8 e +8) e pratica (tra 0 e 24) dello studente e scropri la valutazione finale ");
   
   int? votoScritto, votoPratica;
 
@@ -275,7 +275,7 @@ risultatiEsami(){
     print("Valutazione prova scritta");
     votoScritto = int.tryParse(stdin.readLineSync()!);
     if(votoScritto==null || (votoScritto < -8 || votoScritto >8)){
-      print("Perfavore inserisci un valore corretto, compreso tra -8 & +8");
+      print("Per favore inserisci un valore corretto, compreso tra -8 & +8");
     }
   }while(votoScritto==null || (votoScritto < -8 || votoScritto >8));
 
@@ -283,7 +283,7 @@ risultatiEsami(){
     print("Valutazione prova pratica");
     votoPratica = int.tryParse(stdin.readLineSync()!);
     if(votoPratica==null || (votoPratica < 0 || votoPratica >24)){
-      print("Perfavore inserisci un valore corretto, compreso tra 0 & 24");
+      print("Per favore inserisci un valore corretto, compreso tra 0 & 24");
     }
   }while(votoPratica==null || (votoPratica < 0 || votoPratica >24));
 
@@ -560,9 +560,6 @@ classeUniverisita(){
 
   6. Funzione 'getAverageAgeProfessors': Questa funzione calcola l'età media di tutti i professori. Se la lista dei professori è vuota, la funzione restituisce null. Altrimenti, restituisce l'età media.
   """);
-
-
-
 }
 
   
